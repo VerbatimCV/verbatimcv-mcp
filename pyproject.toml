@@ -1,0 +1,32 @@
+[project]
+name = "verbatimcv-mcp"
+version = "0.1.1"
+description = "MCP server for VerbatimCV: CV and resume parsing for AI agents, every field quoted from the CV, nothing invented."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+keywords = ["mcp", "resume", "cv", "parser", "recruiting", "hiring", "ai-agents"]
+dependencies = [
+    "mcp==2.3.0",
+    "httpx2>=2.16,<3",
+]
+
+[project.urls]
+Homepage = "https://verbatimcv.com"
+Repository = "https://github.com/VerbatimCV/VerbatimCV"
+
+[project.scripts]
+verbatimcv-mcp = "verbatimcv_mcp.server:main"
+
+[dependency-groups]
+dev = ["pytest==9.2.0", "anyio>=4.9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["verbatimcv_mcp"]

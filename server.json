@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.VerbatimCV/verbatimcv",
+  "title": "VerbatimCV",
+  "description": "Parse CVs/resumes into JSON where every field is quoted from the CV. Nothing invented.",
+  "version": "0.1.1",
+  "websiteUrl": "https://verbatimcv.com",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "verbatimcv-mcp",
+      "version": "0.1.1",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "VERBATIMCV_API_KEY",
+          "description": "VerbatimCV API key (vcv_...). Free at https://api.verbatimcv.com/account",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
