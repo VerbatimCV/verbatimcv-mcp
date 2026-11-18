@@ -16,7 +16,7 @@ authorisation).
 
 ## Set up in Claude Desktop
 
-1. Get a free API key at https://api.verbatimcv.com/account (50 parses a month, no card). It starts with `vcv_`.
+1. Get a free API key at https://api.verbatimcv.com/account?ref=mcp (50 parses a month, no card). It starts with `vcv_`.
 2. Open Claude Desktop → Settings → Developer → Edit Config, and add this inside `"mcpServers"`:
 
 ```json
